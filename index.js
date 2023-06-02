@@ -74,7 +74,7 @@ moveLocation(personOne, nLoc)
 nLoc.city = 'Buffalo';
 nLoc.zip = 14201;
 
-console.log('Timmy - ', personOne.location.city, 'Julie - ', personTwo.location.city)
+console.log('Timmy - ', personOne.location, 'Julie - ', personTwo.location)
 
 //-------------------------------------------**------------------------------------------------------------
 
@@ -93,3 +93,26 @@ location : {
 }
 
 }
+
+//-------------------------------------------**------------------------------------------------------------
+
+//Years go by, and personThree is ready for a life of independance.
+
+personOne.age = personOne.age + 20;
+personThree.age = personThree.age + 20;
+
+
+const copyOfPersonThree = {
+  ...personThree.location
+}
+
+{
+copyOfPersonThree.city = 'Seattle',
+copyOfPersonThree.state = 'Washington'
+copyOfPersonThree.zip = 98125
+
+}
+
+personThree.location = copyOfPersonThree;
+
+console.log((personThree.location))
