@@ -51,7 +51,7 @@ nLoc.zip = 14201;
 console.log(personOne.location.city)
 
 */
-
+//-------------------------------------------**------------------------------------------------------------
 //2. Julie and Timmy have gotten married! Since they'll be living together, we should give them the same `location`. However, since they'll be living together forever, let's save ourselves the hassle of updating both of their locations every time they move.
 
 
@@ -75,3 +75,21 @@ nLoc.city = 'Buffalo';
 nLoc.zip = 14201;
 
 console.log('Timmy - ', personOne.location.city, 'Julie - ', personTwo.location.city)
+
+//-------------------------------------------**------------------------------------------------------------
+
+// 3. The happy couple are having a baby! Create a new object personThree.
+
+const personThree = {
+name:{
+  first: 'Jack',
+  last: `${personOne.name.last} - ${personTwo.name.last}`,
+},
+age: 0,
+location : {
+  city: personOne.location.city,
+  state: personOne.location.state,
+  zip:personOne.location.zip
+}
+
+}
